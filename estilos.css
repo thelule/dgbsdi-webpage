@@ -1,0 +1,103 @@
+* {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+.main {
+    position: relative;
+    min-height: 100%;
+    vertical-align: middle;
+    background-image: url(silla2.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-attachment: local;
+    background-position: top right;
+}
+
+.fondo1 {
+    height: 60%;
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(350deg, rgba(36,75,218,0) 35%, rgba(255, 1, 22, 0.336) 100%); 
+    width: 100%;
+}
+
+.fondo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(10deg, rgba(151,151,151,0) 40%, rgba(43, 85, 236, 0.418) 100%); 
+    width: 100%;
+    display: grid;
+}
+
+h1 {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 5vw;
+    padding-left: 5%;
+}
+
+.stroke {
+    top: 10%;
+    padding-top: 10%;
+    text-shadow:
+    0 0 2px rgba(0, 0, 0, 0.5),
+    -2px -2px 0 rgba(0, 0, 0, 0.5),  
+    2px -2px 0 rgba(0, 0, 0, 0.5),
+    -2px 2px 0 rgba(0, 0, 0, 0.5),
+    2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+img {
+    position: relative;
+    float:right;
+    max-width:20%;
+    height:auto;
+    padding-right: 10%;
+    padding-top: 20%;
+    padding-bottom: 0%;
+    opacity: .5;
+}
+
+h1 ::selection {
+    user-select: none;
+}
+
+#mensaje {
+    position: relative;
+    display: grid;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#aviso {
+    place-items: center;
+    position: absolute;
+    width: 40%;
+    border:solid 1px;
+    border-color: gray;
+    border-radius: 1rem;
+    padding: 10%;
+    padding-top:5%;
+    margin-top: 40%;
+    margin-left: 10%;
+    font-size: 100%;
+    font-weight: bolder;
+    color: rgba(95, 29, 5, 0.473);
+
+}
+
+#remark {
+    font-size: 250%;
+}
+/* background-image: url(silla2.png), url(2clic.png); */
